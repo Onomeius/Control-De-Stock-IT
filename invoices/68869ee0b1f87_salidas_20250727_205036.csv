@@ -1,0 +1,7 @@
+"ID Salida",Fecha,"Persona que realiza la salida",Destino,Observacion,"Nombre del Producto",Cantidad
+<br />
+<b>Fatal error</b>:  Uncaught mysqli_sql_exception: Table 'pos_stock.salidas' doesn't exist in C:\xampp\htdocs\xampp\MEJORAS\TESTING\php_action\exportSalidas.php:18
+Stack trace:
+#0 C:\xampp\htdocs\xampp\MEJORAS\TESTING\php_action\exportSalidas.php(18): mysqli-&gt;query('SELECT s.id, s....')
+#1 {main}
+  thrown in <b>C:\xampp\htdocs\xampp\MEJORAS\TESTING\php_action\exportSalidas.php</b> on line <b>18</b><br />

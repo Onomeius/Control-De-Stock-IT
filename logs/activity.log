@@ -1,0 +1,23 @@
+[2025-07-22 05:14:27] User: 1 | Action: upload | Type: invoice | ID: 1 | Details: Factura subida: Documento A4 Portada Informe Moderno Azul y Blanco (1).jpg para orden 25000372
+[2025-07-27 03:02:55] User: 1 | Action: create | Type: brand | ID: 3 | Details: Marca creada: ada
+[2025-07-27 04:25:31] User: 1 | Action: update | Type: product | ID: 1 | Details: Producto actualizado: Camisa formal para hombre
+[2025-07-27 04:25:39] User: 1 | Action: update | Type: product | ID: 2 | Details: Producto actualizado: SALSA DE TOMATE 450G
+[2025-07-27 22:03:06] User: 1 | Action: update | Type: brand | ID: 2 | Details: Marca actualizada: PLASTICENTER C.A, Estado: 1
+[2025-07-27 22:03:12] User: 1 | Action: update | Type: brand | ID: 2 | Details: Marca actualizada: PLASTICENTER C.A, Estado: 2
+[2025-07-27 22:03:21] User: 1 | Action: update | Type: brand | ID: 1 | Details: Marca actualizada: Polo, Estado: 2
+[2025-07-27 22:03:26] User: 1 | Action: update | Type: brand | ID: 1 | Details: Marca actualizada: Polo, Estado: 1
+[2025-07-27 22:05:30] User: Desconocido | Action: create | Type: user | ID: 2 | Details: Usuario creado: bherrera
+[2025-07-28 00:05:20] User: Desconocido | Action: create | Type: user | ID: 3 | Details: Usuario creado: bherrera
+[2025-08-01 02:55:23] User: 1 | Action: create | Type: category | ID: 6 | Details: Categoría creada: Artículos de Limpieza, Estado: 1
+[2025-08-01 02:56:20] User: 1 | Action: create | Type: brand | ID: 4 | Details: Marca creada: Inversiones Quero Jimenez
+[2025-08-01 02:57:48] User: 1 | Action: create | Type: product | ID: 4 | Details: Producto creado: Pride Natural 360 ML
+[2025-08-01 03:09:35] User: 1 | Action: create | Type: invoice | ID: 7 | Details: Factura cargada: FACTURA PRIDE.pdf (N° OC: 25000372, N° Factura: 00017146)
+[2025-08-03 21:09:29] User: 1 | Action: create | Type: product | ID: 5 | Details: Producto creado: prueba
+[2025-08-03 21:09:33] User: 1 | Action: delete | Type: product | ID: 5 | Details: Producto eliminado (desactivado) con ID: 5
+[2025-08-03 21:13:27] User: 1 | Action: create | Type: category | ID: 7 | Details: Categoría creada: prueba, Estado: 1
+[2025-08-03 21:17:40] User: 1 | Action: create | Type: category | ID: 8 | Details: Categoría creada: Artículos de Limpieza	, Estado: 1
+[2025-08-03 21:24:16] User: 1 | Action: update | Type: brand | ID: 3 | Details: Marca actualizada: EMINENT, Estado: 2
+[2025-08-04 00:05:07] User: 1 | Action: update | Type: category | ID: 6 | Details: Categoría actualizada: Artículos de Limpieza, Estado: 2
+[2025-08-04 00:05:11] User: 1 | Action: update | Type: category | ID: 6 | Details: Categoría actualizada: Artículos de Limpieza, Estado: 1
+[2025-08-04 01:29:27] User: 1 | Action: create | Type: product | ID: 6 | Details: Producto creado: bobina
+[2025-08-04 01:30:35] User: 1 | Action: update | Type: product | ID: 6 | Details: Producto actualizado: bobina

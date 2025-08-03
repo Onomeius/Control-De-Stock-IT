@@ -1,0 +1,336 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+nav.navbar {
+    background-color: #f8f9fa; /* Light background for classic look */
+    border-bottom: 1px solid #dee2e6; /* Subtle border at the bottom */
+    box-shadow: 0 1px 3px rgba(0,0,0,.05); /* Light shadow */
+    border-radius: 0;
+    min-height: 50px; /* Smaller height */
+    display: flex;
+    align-items: center;
+    padding: 0 15px; /* Reduced horizontal padding */
+}
+
+nav.navbar .navbar-nav > li > a {
+    color: #333 !important; /* Dark text for light background */
+    padding: 10px 12px; /* Smaller padding */
+    font-weight: 500; /* Standard font weight */
+    font-size: 14px; /* Smaller font size */
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px;
+    margin: 0 2px; /* Smaller spacing */
+    display: flex;
+    align-items: center;
+    position: relative; /* Keep for potential future use, but no active underline */
+}
+
+nav.navbar .navbar-nav > li > a i {
+    margin-right: 5px; /* Smaller space for icon */
+    font-size: 14px; /* Smaller icon size */
+    color: #555; /* Muted dark icon color */
+    transition: color 0.2s ease-in-out;
+}
+
+nav.navbar .navbar-nav > li > a:hover,
+nav.navbar .navbar-nav > .active > a,
+nav.navbar .navbar-nav > .active > a:hover,
+nav.navbar .navbar-nav > .active > a:focus {
+    background-color: #e9ecef; /* Light hover background */
+    color: #007bff !important; /* Accent blue for text */
+    transform: none; /* Remove lift effect */
+    box-shadow: none;
+}
+
+nav.navbar .navbar-nav > li > a:hover i,
+nav.navbar .navbar-nav > .active > a i {
+    color: #007bff; /* Accent blue for icon */
+}
+
+/* Remove underline effect */
+nav.navbar .navbar-nav > li > a::after {
+    content: none;
+}
+
+nav.navbar .navbar-nav > li > a:hover::after,
+nav.navbar .navbar-nav > .active > a::after {
+    width: 0;
+}
+
+nav.navbar .navbar-brand {
+    color: #333 !important; /* Dark color for brand */
+    font-weight: 600;
+    font-size: 20px; /* Smaller font size */
+    text-shadow: none;
+}
+
+nav.navbar .navbar-toggle .icon-bar {
+    background-color: #333 !important; /* Dark color for toggle bars */
+}
+
+.panel-heading {
+    background-color: #007bff; /* Azul de acento para encabezados de panel */
+    color: #ffffff;
+    border-color: #007bff;
+}
+
+.panel-default > .panel-heading {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+}
+
+.panel-success > .panel-heading {
+    background-color: #28a745; /* Verde */
+    border-color: #28a745;
+}
+
+.panel-info > .panel-heading {
+    background-color: #17a2b8; /* Cian */
+    border-color: #17a2b8;
+}
+
+.panel-danger > .panel-heading {
+    background-color: #dc3545; /* Rojo */
+    border-color: #dc3545;
+}
+
+.panel-primary > .panel-heading {
+    background-color: #007bff; /* Azul de acento */
+    border-color: #007bff;
+}
+
+
+
+.div-hide {
+	display: none;
+}
+
+.kv-file-zoom {
+	display: none;
+}
+
+div.kv-avatar div.file-input div.file-preview {
+	width: 200px;
+}
+
+/*login form*/
+.vertical {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+/* Responsive tables */
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+}
+.table-responsive > .table {
+    margin-bottom: 0;
+}
+.table-responsive > .table > thead > tr > th,
+.table-responsive > .table > tbody > tr > th,
+.table-responsive > .table > tfoot > tr > th,
+.table-responsive > .table > thead > tr > td,
+.table-responsive > .table > tbody > tr > td,
+.table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+}
+
+/* General typography improvements */
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 700; /* Negrita para los títulos */
+}
+
+.breadcrumb {
+    background-color: #e9ecef; /* Gris claro */
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.btn {
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+
+
+
+
+.dropdown-menu {
+    background-color: #ffffff; /* Light background for dropdown */
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    border: 1px solid #e0e0e0; /* Subtle border */
+    padding: 5px 0;
+    min-width: 160px; /* Smaller width */
+}
+
+.dropdown-menu > li > a {
+    color: #333; /* Dark text for dropdown items */
+    font-weight: 400;
+    padding: 8px 15px;
+    transition: all 0.15s ease;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu > li > a i {
+    margin-right: 8px;
+    font-size: 14px;
+    color: #555; /* Muted dark icon color */
+    transition: color 0.15s ease;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #f0f0f0; /* Light hover background */
+    color: #007bff;
+}
+
+.dropdown-menu > li > a:hover i {
+    color: #007bff;
+}
+
+.dropdown-menu .divider {
+    margin: 5px 0;
+    background-color: #eee;
+}
+
+
+
+.dashboard-content-container {
+    padding: 20px;
+}
+
+.dashboard-table-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.dashboard-table-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-table-section h3 i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.dashboard-table-section .table {
+    margin-bottom: 0;
+}
+
+.dashboard-table-section .table thead th {
+    background-color: #f8f9fa;
+    color: #555;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.dashboard-table-section .table tbody td {
+    color: #4a4a4a;
+    font-size: 14px;
+}
+
+.dashboard-table-section .table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.dashboard-table-section .table tbody td i {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+/* DataTables specific styling */
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin-left: 0.5em;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5em 0.8em;
+    border-radius: 4px;
+    margin: 0 2px;
+    border: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    color: #007bff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background-color: #007bff;
+    color: #ffffff !important;
+    border-color: #007bff;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+    color: #6c757d !important;
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+}
+
+.dataTables_wrapper .dataTables_info {
+    padding-top: 0.85em;
+    color: #6c757d;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_paginate {
+    margin-bottom: 15px;
+}
